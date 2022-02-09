@@ -88,6 +88,7 @@ The playbook implements the following tasks:
 -Finally, SSH to ELK-VM1 to verify that this VM is running or not.
 
 
+
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ![](https://github.com/ishara66/ishara66/blob/main/ELK-Images/Docker%20ps.png)
