@@ -7,6 +7,8 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
   [Filebeat](https://github.com/ishara66/ishara66/blob/main/Ansible/Roles/filebeat-playbook.yml.txt)
+  
+  [Metricbeat](https://github.com/ishara66/ishara66/blob/main/Ansible/Roles/metricbeat-playbook.yml.txt)
 
 This document contains the following details:
 - Description of the Topologu
@@ -61,7 +63,7 @@ A summary of the access policies in place can be found in the table below.
 | Jump Box | yes                 | 98.169.52.4          |
 | Web-1    | No                  | 10.0.0.4             |
 | Web-2    | No                  | 10.0.0.4             |
-|ELK-VM1   | No                  | 10.0.0.4             |
+|ELK-VM1   | yes                 | 98.169.52.4          |
 
 ### Elk Configuration
 
