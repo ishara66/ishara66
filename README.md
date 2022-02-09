@@ -6,10 +6,14 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-  [Filebeat](https://github.com/ishara66/ishara66/blob/main/Ansible/Roles/filebeat-playbook.yml.txt)
+  [Filebeat-Playbook](https://github.com/ishara66/ishara66/blob/main/Ansible/Roles/filebeat-playbook.yml.txt)
   
-  [Metricbeat](https://github.com/ishara66/ishara66/blob/main/Ansible/Roles/metricbeat-playbook.yml.txt)
-
+  [Metricbeat-Playbook](https://github.com/ishara66/ishara66/blob/main/Ansible/Roles/metricbeat-playbook.yml.txt)
+  
+  [DVWA-Playbook](https://github.com/ishara66/ishara66/blob/main/Ansible/DVWA/pentest.yml.txt)
+  
+  [ELK-Playbook](https://github.com/ishara66/ishara66/blob/main/Ansible/install%20Elk.playbook.txt)
+  
 This document contains the following details:
 - Description of the Topologu
 - Access Policies
@@ -52,8 +56,8 @@ Only the jump box provisioner machine can accept connections from the Internet. 
 - My workstation or My device ip address.
 
 Machines within the network can only be accessed by jump box provisioner.
--Jump box provisioner
--10.0.0.4 (private),
+
+-10.0.0.4 (Private IP),
 
 
 A summary of the access policies in place can be found in the table below.
@@ -72,20 +76,25 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 -In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+
 -At first SSH to Jump-Box (ssh sysadmin@13.82.52.22)
+
 -Start and attach the ansible docker like sudo docker start stoic_kapitsa and sudo docker attach stoic_kapitsa
+
 -Navigate /etc/ansible and create install-elk.yml using nano
+
 -Run (ansible-playbook /etc/ansible/roles/install-elk.yml) command to run that playbook
+
 -Finally, SSH to ELK-VM1 to verify that this VM is running or not.
 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![](https://github.com/ishara66/ishara66/blob/main/ELK-Images/Docker%20ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
--List the IP addresses of the machines you are monitoring
+
 -Web-1 (10.0.0.5)
 -Web-2 (10.0.0.6)
 
@@ -99,6 +108,7 @@ _
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
+
 - Copy the configuration file to /etc/ansible/files and playbook to /etc/ansible/roles
 - Update the host file to include the private IP address of the machine you wish install and configure ELK in.
 - Run the playbook, and navigate to http://[your.ELK-VM.External.IP]:5601/app/kibana to check that the installation worked as expected.
@@ -111,5 +121,3 @@ You must update the hosts file in the etc/ansible directory. By adding the priva
 
 Which URL do you navigate to in order to check that the ELK server is running?
 http://40.86.81.132:5601/app/kibana
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
