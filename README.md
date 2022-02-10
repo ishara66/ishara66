@@ -10,9 +10,9 @@ These files have been tested and used to generate a live ELK deployment on Azure
   
   [Metricbeat-Playbook](https://github.com/ishara66/ishara66/blob/main/Ansible/Roles/metricbeat-playbook.yml.txt)
   
-  [DVWA-Playbook](https://github.com/ishara66/ishara66/blob/main/Ansible/DVWA/pentest.yml.txt)
+  [DVWA-Playbook](https://github.com/ishara66/ishara66/blob/main/Ansible/DVWA-Playbook/pentest.yml.txt)
   
-  [ELK-Playbook](https://github.com/ishara66/ishara66/blob/main/Ansible/install%20Elk.playbook.txt)
+  [ELK-Playbook](https://github.com/ishara66/ishara66/blob/main/Ansible/ELK-Playbook/install%20Elk.playbook.txt)
   
 This document contains the following details:
 - Description of the Topologu
