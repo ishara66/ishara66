@@ -34,7 +34,7 @@ In your own words, is there anything that seems potentially strange about this a
 
 4.Filter the data by this event.
 What is the timestamp for this event?
--2 suspecious visitors on 5th feb at 19:00 and on the same date at 20:00.
+-2 suspecious visitors on 5th feb 2022 at 19:00 and on the same date at 20:00.
 
 What kind of file was downloaded?
 -Zip File.
@@ -50,8 +50,8 @@ What is the source IP address of this activity?
 -19.112.190.54 and 17.111.163.53.
 
 What are the geo coordinates of this activity?
--{ "lat": 40.88544444, "lon": -83.86863889 }
--{ "lat": 42.59157139, "lon": -114.7967178 }
+-"lat": 40.88544444, "lon": -83.86863889 
+-"lat": 42.59157139, "lon": -114.7967178
 
 What OS was the source machine running?
 -IOS and windows 7.
@@ -72,7 +72,7 @@ Was the file they downloaded malicious? If not, what is the file used for?
 -I don't think it's malicious because the visitor download the zip which are used to compress one or more files into a single location.
 
 Is there anything that seems suspicious about this activity?
--I don't see any suspicious imn this activities.
+-I don't see any suspicious in this activities.
 
 Is any of the traffic you inspected potentially outside of compliance guidlines?
 -No
