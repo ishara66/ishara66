@@ -100,6 +100,7 @@ This ELK server is configured to monitor the following machines:
 -Web-2 (10.0.0.6)
 
 We have installed the following Beats on these machines:
+
 -Filebeat and Metricbeat
 
 These Beats allow us to collect the following information from each machine:
@@ -115,9 +116,11 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to http://[your.ELK-VM.External.IP]:5601/app/kibana to check that the installation worked as expected.
 
 Which file is the playbook? Where do you copy it?
+
 /etc/ansible/roles/filebeat-playbook.yml
 
 Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+
 You must update the hosts file in the etc/ansible directory. By adding the private ip address of the specific machine or machines you wish to install ELK or Filebeat on.
 
 Which URL do you navigate to in order to check that the ELK server is running?
