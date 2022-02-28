@@ -31,8 +31,9 @@ Load balancing ensures that the application will be highly efficient and respons
 
 -A Load Balancer is the process of distrubting workload evenly across muntiple servers and protect the system by defending against DDoS attacks.  
 
--What is the advantage of a jump box?
-It is the gateway that all user need to connect to a jumpbox before connecting  to any virtual machine or lunching any administrative task to avoid malicious attack.
+What is the advantage of a jump box?
+
+-It is the gateway that all user need to connect to a jumpbox before connecting  to any virtual machine or lunching any administrative task to avoid malicious attack.
 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system metrics.
