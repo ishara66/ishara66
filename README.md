@@ -15,7 +15,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   [ELK-Playbook](https://github.com/ishara66/ishara66/blob/main/Ansible/ELK-Playbook/install%20Elk.playbook.txt)
   
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
